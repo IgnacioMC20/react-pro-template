@@ -23,12 +23,12 @@ export const Navigation = () => {
         </nav>
 
         <Routes>
-          {/* <Route path="about" element={<h1>About Page</h1>}></Route> */}
-          {/* <Route path="users" element={<h1>Users Page</h1>}></Route> */}
-          {/* <Route path="/" element={<h1>Home Page</h1>}></Route> */}
+          <Route path="about" element={<h1>About Page</h1>}></Route>
+          <Route path="users" element={<h1>Users Page</h1>}></Route>
+          <Route path="/" element={<h1>Home Page</h1>}></Route>
 
           {/* todo: 404 page */}
-          {/* <Route path="/*" element={<Navigate to={'/home'} replace />}></Route> */}
+          <Route path="/*" element={<Navigate to={'/home'} replace />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
