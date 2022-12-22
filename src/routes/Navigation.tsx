@@ -36,7 +36,7 @@ export const Navigation = () => {
 
           <Routes>
             {
-              routes.map(route => (<Route path={route.path} element={<route.Component />}></Route>))
+              routes.map(route => (<Route key={route.path} path={route.path} element={<route.Component />}></Route>))
             }
 
             {/* todo: 404 page */}

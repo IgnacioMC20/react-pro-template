@@ -56,3 +56,8 @@ nav li a {
   color: grey;
   transition: all .3s ease-out;
 }
+
+.li-links{
+  text-decoration: none;
+  color: white;
+}
