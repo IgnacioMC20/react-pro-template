@@ -6,7 +6,7 @@ import { ProductContextProps, Props } from '../interfaces/products';
 export const ProductContext = createContext({} as ProductContextProps);
 const { Provider } = ProductContext;
 
-export let ProductCart = ({ children, product }: Props) => {
+export const ProductCart = ({ children, product }: Props) => {
 
     const { counter, increaseBy } = useProduct();
 
