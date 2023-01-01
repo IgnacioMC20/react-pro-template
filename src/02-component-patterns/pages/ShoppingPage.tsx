@@ -1,4 +1,4 @@
-import { ProductCart } from "../components"
+import { ProductButtons, ProductCart, ProductImage, ProductTitle } from "../components"
 
 
 const product = {
@@ -17,19 +17,27 @@ export const ShoppingPage = () => {
         flexDirection: 'row',
         flexWrap: 'wrap'
       }}>
-        <ProductCart product={product}>
-          <ProductCart.Image />
+        <ProductCart product={product} >
+          <ProductCart.Image className="custom-image" />
           <ProductCart.Title />
           <ProductCart.Buttons />
         </ProductCart>
 
-        {/* <ProductCart product={product}>
+        <ProductCart product={product} className="bg-dark text-white">
+          <ProductImage className="custom-image" />
+          <ProductTitle />
+          <ProductButtons className="custom-buttons" />
+        </ProductCart>
+
+        <ProductCart
+          product={product}
+          style={{
+            backgroundColor: '#70D1F8'
+          }}>
           <ProductImage />
-          <ProductTitle title='' /> `
-          <ProductButtons counter={0} increaseBy={function (value: number): void{
-            throw new Error('error')
-          }} />
-        </ProductCart> */}
+          <ProductTitle />
+          <ProductButtons />
+        </ProductCart>
 
       </div>
     </div>
