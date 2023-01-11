@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .content-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="pdfbody">
+
+    <div class="pdfcontainer">
+        <!-- @if ($paciente->encargado_nombre)
+            el encargado del paciente {{ $paciente->encargado_nombre }}, con nombre {{ $paciente->nombres }}
+        @else
+            el paciente con nombre {{ $paciente->nombres }} {{ $paciente->apellidos }}
+        @endif -->
+        <!-- <h3>{{ $anotaciones->detalles }}</h3>
+        <h3>{{ $anotaciones->antecfam }}</h3>
+        <h3>{{ $anotaciones->antecod }}</h3>
+        <h4>{{ $paciente->nombres }}</h4>
+        <h4>{{ $paciente->apellidos }}</h4>
+        <h4>{{ $paciente->encargado_nombre }}</h4> -->
+        <div style="margin: 50px 50px;">
+            <!-- declaro que lo establecido en la siguiente hoja es informacion veridica sobre mi estado de salud por lo que
+            no responsabilizo a la doctora dentista por alguna otra situacion que me suceda fuera de este diagnostico -->
+            <h1 style="text-align: center; font-weight: 100;">Hoja de Consentimiento Informado</h1>
+            <div style="border: 1px solid black; display: flex; justify-content: space-between; margin-top: 20px;">
+                <span>nombres y apellidos</span>
+                <span>10-06-2022</span>
+            </div>
+            <div style="margin-bottom: 20px;">1234567890</div>
+            <div style="margin: 20px 0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit
+                labore pariatur ex harum, autem
+                animi accusamus atque, aspernatur ipsa provident nihil nam quidem vero veniam rerum et ab esse!</div>
+            <div style="margin: 20px 0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit
+                labore pariatur ex harum, autem
+                animi accusamus atque, aspernatur ipsa provident nihil nam quidem vero veniam rerum et ab esse!</div>
+            <div style="margin: 20px 0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit
+                labore pariatur ex harum, autem
+                animi accusamus atque, aspernatur ipsa provident nihil nam quidem vero veniam rerum et ab esse!</div>
+            <div style="margin: 50px 0px;">
+                declaro que lo establecido en la siguiente hoja es informacion veridica sobre mi estado de salud por lo
+                que
+                no responsabilizo a la doctora dentista por alguna otra situacion que me suceda fuera de este
+                diagnostico
+            </div>
+            <div style="margin: 50px 0px;">
+                <h5 style="text-align: end;">
+                    F. ____________________________
+                </h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
