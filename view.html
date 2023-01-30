@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        margin: 50px 50px;
+        padding: 50px 50px;
+    }
+    
+    .pdfcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+
+<body class="pdfbody">
+    <div class="pdfcontent">
+        <h1 class="display-4">Saludentis <small>Clínica Dental</small></h1>
+        @if ($paciente->encargado_nombre)
+           <h5>
+            Nombre del encargado: {{ $paciente->encargado_nombre }}
+           </h5> 
+        @endif
+        <h5>
+            Nombre del paciente: {{ $paciente->nombres }} {{ $paciente->apellidos }}
+        </h5>
+        <h5>
+            Antecedentes Familiares: {{ $anotaciones->detalles }}
+        </h5>
+        <h5>
+            Antecedentes `: {{ $anotaciones->detalles }}
+        </h5>
+        <h3>{{ $anotaciones->detalles }}</h3>
+        <h3>{{ $anotaciones->antecfam }}</h3>
+        <h3>{{ $anotaciones->antecod }}</h3>
+        <h4>{{ $paciente->nombres }}</h4>
+        <h4>{{ $paciente->apellidos }}</h4>
+        <h4>{{ $paciente->encargado_nombre }}</h4>
+        <br>
+
+
+        <span>
+            declaro que lo establecido en la siguiente hoja es informacion veridica sobre mi estado de salud por lo que no responsabilizo a la doctora dentista por alguna otra situacion que me suceda fuera de este diagnostico
+        </span>
+
+
+        <div class="">
+           
+        </div>
+    </div>
+</body>
+
+
+</html>
