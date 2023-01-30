@@ -1,5 +1,6 @@
 export * from './FormikBasicPage'
 export * from './FormikYupPage'
 export * from './RegistrerPage'
+export * from './RegistrerFormikPage'
 export * from './FormikComponents'
 export * from './FormikAbstract'

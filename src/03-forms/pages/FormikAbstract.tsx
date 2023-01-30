@@ -31,8 +31,6 @@ export const FormikAbstract = () => {
                             <MyTextInput label='First Name' name='firstName' placeholder='Ignacio' />
                             <MyTextInput label='Last Name' name='lastName' placeholder='Martínez' />
                             <MyTextInput label='Email' name='email' placeholder='jm10cuyun@gmail.com' type='email' />
-
-                            <label htmlFor='jobType'>Job Type</label>
                             <MySelect label={'Job Type'} name={'jobType'}>
                                 <option value="">Pick Something</option>
                                 <option value="developer">Developer</option>
